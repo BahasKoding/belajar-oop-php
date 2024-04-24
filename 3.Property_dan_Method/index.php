@@ -53,7 +53,15 @@ $produk1->harga = 100000;
 // var_dump($produk1);
 // echo "Novel : $produk1->judul By : $produk1->penulis, Price $produk1->harga";
 
+$produk2 = new Produk();
+$produk2->judul = "Kami (bukan) Sarjana Kertas";
+$produk2->penulis = "JS Khairen";
+$produk2->penerbit = "Gramedia";
+$produk2->harga = 120000;
+
 echo "Novel : " . $produk1->display();
+echo "<hr>";
+echo "Novel : " . $produk2->display();
 
 // Kesimpulan
 // sudah membuat property & method di dalam class Produk()
